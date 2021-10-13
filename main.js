@@ -315,7 +315,13 @@ function formSend(e) {
     e.preventDefault();
     console.log(inpEmail.value);
     console.log(inpPass.value);
-
+    Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'You are now Logged In',
+        showConfirmButton: false,
+        timer: 1500
+    })
 
     if (inpPass.value === '') {
         Swal.fire('password is obligatory')

@@ -1,0 +1,262 @@
+$background-color-One: #A7C2CF;
+$link-color: #004466;
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html{
+    min-height: 100%;
+}
+
+
+.darkLight{
+    list-style: none;
+}
+
+#flex{
+    display: inline-flex;
+    padding: 1rem;
+}
+
+body{
+    .container{
+        max-width: 100%;
+    }
+
+    position: relative;
+    margin-bottom: 9rem;
+
+    a{
+        font-family: 'Barlow', sans-serif;
+        font-style: italic;
+    }
+
+    p{
+        font-family: 'Barlow', sans-serif;
+        font-style: italic;
+    }
+
+    table{
+        font-family: 'Barlow', sans-serif;
+        
+    }
+
+    .productsImg{
+        max-height: auto;
+        max-width: 7rem;
+    }
+
+    .card-title{
+        padding-top: 1rem;
+    }
+
+    .card{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        padding: 1rem;
+        border: 0px;
+        background-color: rgba(245, 245, 245, 0);
+    }
+
+
+    h1, h2, h3, h4, h5{
+        font-family: 'Comfortaa', cursive;
+    }
+
+    .steps{
+    max-height: 7rem;
+    padding-bottom: 1rem;
+    }
+
+    .stepsText{
+        color: rgb(8, 127, 136);
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+
+    .processTitle{
+        padding-left: 3rem;
+        color: #605443;
+    }
+
+    //card styles
+    .cardEdit{
+        width: 500px;
+    }
+
+    .card-title{
+        font-variant-caps: small-caps;
+        font-size: 1.5rem;
+    }
+
+    .card-text{
+        font-size: 0.9rem;
+        font-style: italic;
+    }
+    .price{
+        color: rgb(128, 128, 128);
+    }
+
+    .pTitle{
+        color: #605443;
+        font-weight: bold;
+        font-size: 2.5rem;
+    }
+
+    //buttons
+    .btn{
+        font-family: 'Comfortaa', cursive;
+        font-weight: bold;
+    }
+
+    .btn-primary{
+        background-color: #E8A87C;
+        border: #031720;
+    }
+
+    .btn-info{
+        @extend .btn-primary;
+    }
+
+    .btn-danger{
+        background-color: #6c757d;
+        border: #6c757d;
+    }
+}
+
+header{
+    width: 100%;
+    background-color: $background-color-One;
+
+    .padding-1{
+        padding-top: 0.5rem;
+    }
+
+    .verticalCenter{
+        vertical-align: middle;
+    }
+
+    .imgHeader{
+        max-height: 2.5rem;
+        width: auto;
+    }
+    
+    .logo{
+        max-height: 6rem;
+        width: auto;
+    }
+
+    .centerAlign{
+        justify-content: center;
+        align-self: center;
+    }
+
+    .alignEnd{
+        justify-content: end;
+    }
+
+    .col-4{
+        margin-top: 1rem;
+    }
+
+    .nav-link{
+        color: $link-color;
+    }
+
+    .headerIcons{
+        fill: $link-color;
+    }
+
+    .float-start{
+        padding-left: inherit;
+    }
+}
+
+//modal content
+.modal-content{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    th, td{
+        color: black;
+    }
+}
+
+main{
+    margin: 1rem 5rem 1rem 5rem;
+}
+
+footer{
+    width: 100%;
+    background-color: $background-color-One;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 9rem;
+    text-align: center;
+
+    .logo{
+        max-height: 3rem;
+        width: auto;
+    }
+    
+    .socialmedia{
+        list-style: none;
+        display: inline-flex;
+        padding-left: 0%;
+        ul#navigation{
+            padding-left: 0;
+            text-align:center;
+            list-style-type:none;
+        }
+        a{
+            color: $link-color;
+            padding-left: 0.8rem;
+            
+        }
+    }
+    #links{
+        list-style: none;
+        a{
+            color: $link-color;
+            text-decoration: none;
+        }
+    }
+    .card-body{
+        width: 12rem;
+    }
+    .card-text{
+        font-size: 0.8rem;
+    }
+    .card{
+        border: 0px;
+    }
+}
+
+#stickFooter{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+//Media Query
+
+@media only screen and (max-width: 576px)  {
+    .newsletter{
+        display: none;
+    }
+    body{
+        .stepsText{
+            font-size: 1rem;
+        }
+    }
+}
+

@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name":"Cappuccino",
+        "ingrediets":"Espresso, milk steamed and foam",
+        "img":"img/cappuccino_capsule.png",
+        "price": 210,
+        "type":"capsule"
+    },
+    {
+        "id": 2,
+        "name":"Mokka",
+        "ingrediets":"Expresso, chocolate, steamed milk",
+        "img":"img/mokka_capsule.png",
+        "price": 310,
+        "type":"capsule"
+    },
+    {
+        "id": 3,
+        "name":"Latte",
+        "ingrediets":"Expresso and steamed milk",
+        "img":"img/latte_capsule.png",
+        "price": 250,
+        "type":"capsule"
+    },
+    {
+        "id": 4,
+        "name":"Nutmeg",
+        "ingrediets":"Expresso, nutmeg, steamed milk and caramel",
+        "img":"img/nutmeg_capsule.png",
+        "price": 350,
+        "type":"capsule"
+    },
+    {
+        "id": 5,
+        "name":"Vainilla Latte",
+        "ingrediets":"Expresso, steamed milk, vainilla and caramel",
+        "img":"img/vainilla_capsule.png",
+        "price": 360,
+        "type":"capsule"
+    },
+    {
+        "id": 6,
+        "name":"Hazel Mokka",
+        "ingrediets":"Expresso, steamed milk, hazel and chocolate",
+        "img":"img/hazel_capsule.png",
+        "price": 380,
+        "type":"capsule"
+    }
+]

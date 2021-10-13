@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FINAL Java & Chai</title>
+        <!--LINKS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <!--Header-->
+    <header class="container headerBg">
+        <div class="row">
+            <!--Dark Mode Button-->
+            <div class="col-4 float-start d-flex">
+                <div>
+                    <ul class="darkLight ">
+                        <li><button class="btn btn-dark" id="button-dark-mode"><i class="far fa-moon"></i></button></li>
+                        <li><button class="btn btn-light" id="button-light-mode"><i class="fas fa-sun"></i></button></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-4 text-center">
+                <img class="logo img-fluid" alt="logo" src="img/logo.png">
+            </div>
+            <div class="col-4 text-end">
+                <!-- Button trigger modal 1 - Shopping Cart -->
+                <svg type="button" class="btn imgHeader headerIcons" data-bs-toggle="modal" data-bs-target="#bagmodal" alt="bag" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                    <g>
+                        <g>
+                            <path d="M461.3,122.32c-1.39-1.4-3.32-2.2-5.3-2.2h-80h-12.49V67.5c0-0.013-0.002-0.026-0.002-0.039    C363.486,30.259,333.214,0,296.008,0c-14.964,0-28.8,4.901-40.004,13.173C244.8,4.901,230.964,0,216,0    c-37.22,0-67.501,30.281-67.501,67.501c0,0.007,0.001,0.013,0.001,0.02v52.6H56c-1.97,0-3.91,0.8-5.3,2.2    c-1.4,1.39-2.2,3.33-2.2,5.3V374.5c0,4.13,3.36,7.5,7.5,7.5s7.5-3.37,7.5-7.5V135.12h85v42.499c0,4.14,3.36,7.5,7.5,7.5    s7.5-3.36,7.5-7.5V135.12h105v42.499c0,4.14,3.36,7.5,7.5,7.5c4.13,0,7.5-3.36,7.5-7.5V135.12h85V244.5v30V497h-305v-92.5    c0-4.14-3.36-7.5-7.5-7.5s-7.5,3.36-7.5,7.5v100c0,1.97,0.8,3.91,2.2,5.3c1.39,1.4,3.33,2.2,5.3,2.2h320h80    c1.919,0,3.839-0.732,5.303-2.197c1.267-1.267,1.984-2.875,2.154-4.529c0.002-0.012,0.004-0.025,0.005-0.037    c0.024-0.238,0.036-0.476,0.037-0.715c0-0.007,0.001-0.014,0.001-0.022V127.62C463.5,125.65,462.7,123.71,461.3,122.32z     M228.51,120.12H163.5V67.5c0-0.004-0.001-0.008-0.001-0.013C163.507,38.544,187.055,15,216,15c10.62,0,20.507,3.179,28.778,8.622    c-10.13,11.809-16.271,27.137-16.271,43.879c0,0.02,0.003,0.039,0.003,0.058V120.12z M268.501,67.5v52.62H243.51V67.5    c0-0.013-0.002-0.025-0.002-0.038c0.01-12.92,4.719-24.755,12.496-33.907c7.782,9.158,12.493,21.002,12.497,33.932    C268.501,67.491,268.501,67.496,268.501,67.5z M348.51,120.121H283.5v-52.6c0-0.007,0.001-0.013,0.001-0.02    c0-16.742-6.141-32.069-16.271-43.879C275.501,18.179,285.388,15,296.008,15c28.949,0,52.501,23.552,52.501,52.501    c0,0.007,0.001,0.013,0.001,0.02V120.121z M383.5,274.5v-30V135.12h24.998v326.27l-24.998,25V274.5z M394.102,497l21.896-21.897    L437.894,497H394.102z M448.5,486.393l-25.002-25.004V135.12H448.5V486.393z"/>
+                        </g>
+                    </g>
+                </svg>
+                
+                <!-- Modal 1 - Shopping Cart -->
+                <div class="modal fade" id="bagmodal" tabindex="-1" aria-labelledby="bagmodallabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="bagmodallabel">Your Purchase</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="my-2">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Item</th>
+                                        <th scope="col">Amount</th>
+                                        <th scope="col">Action</th>
+                                        <th scope="col">Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="items"></tbody>
+                                    <tfoot>
+                                        <tr id="footer-cart">
+                                            <th scope="row" colspan="5">Your cart is Empty</th>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" id="pay-btn">Pay</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                
+                <!-- Button trigger modal 2 - User -->
+                <svg type="button" class="btn imgHeader headerIcons" data-bs-toggle="modal" data-bs-target="#userModal" alt="user" xmlns="http://www.w3.org/2000/svg" viewBox="-42 0 512 512.002"><path d="m210.351562 246.632812c33.882813 0 63.222657-12.152343 87.195313-36.128906 23.972656-23.972656 36.125-53.304687 36.125-87.191406 0-33.875-12.152344-63.210938-36.128906-87.191406-23.976563-23.96875-53.3125-36.121094-87.191407-36.121094-33.886718 0-63.21875 12.152344-87.191406 36.125s-36.128906 53.308594-36.128906 87.1875c0 33.886719 12.15625 63.222656 36.132812 87.195312 23.976563 23.96875 53.3125 36.125 87.1875 36.125zm0 0"/><path d="m426.128906 393.703125c-.691406-9.976563-2.089844-20.859375-4.148437-32.351563-2.078125-11.578124-4.753907-22.523437-7.957031-32.527343-3.308594-10.339844-7.808594-20.550781-13.371094-30.335938-5.773438-10.15625-12.554688-19-20.164063-26.277343-7.957031-7.613282-17.699219-13.734376-28.964843-18.199219-11.226563-4.441407-23.667969-6.691407-36.976563-6.691407-5.226563 0-10.28125 2.144532-20.042969 8.5-6.007812 3.917969-13.035156 8.449219-20.878906 13.460938-6.707031 4.273438-15.792969 8.277344-27.015625 11.902344-10.949219 3.542968-22.066406 5.339844-33.039063 5.339844-10.972656 0-22.085937-1.796876-33.046874-5.339844-11.210938-3.621094-20.296876-7.625-26.996094-11.898438-7.769532-4.964844-14.800782-9.496094-20.898438-13.46875-9.75-6.355468-14.808594-8.5-20.035156-8.5-13.3125 0-25.75 2.253906-36.972656 6.699219-11.257813 4.457031-21.003906 10.578125-28.96875 18.199219-7.605469 7.28125-14.390625 16.121094-20.15625 26.273437-5.558594 9.785157-10.058594 19.992188-13.371094 30.339844-3.199219 10.003906-5.875 20.945313-7.953125 32.523437-2.058594 11.476563-3.457031 22.363282-4.148437 32.363282-.679688 9.796875-1.023438 19.964844-1.023438 30.234375 0 26.726562 8.496094 48.363281 25.25 64.320312 16.546875 15.746094 38.441406 23.734375 65.066406 23.734375h246.53125c26.625 0 48.511719-7.984375 65.0625-23.734375 16.757813-15.945312 25.253906-37.585937 25.253906-64.324219-.003906-10.316406-.351562-20.492187-1.035156-30.242187zm0 0"/></svg>
+                            
+                <!-- Modal 2 - User -->
+                <div class="modal fade" id="userModal" tabindex="-1" aria-labelledby="userModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="userModalLabel">Log In</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body register row g-3 align-items-center">
+                            <form method="post" action="" name="login" id="idForm">
+                                <input class="form-control" for="emailOne" type="email" placeholder="email" id="email" name="emailid" autocomplete="off"><br>
+                                <input class="form-control" for="passwordOne" type="password" placeholder="password" id="userpassword" name="password" autocomplete="off">
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary button" id="submitform" name="submit" class="btn btn-primary">Sign In</button>
+                    </div>
+                </div>
+        </div>
+        </div>
+
+            </div>
+        </div>
+        <!-- Menu - Navbar -->
+        <div class="padding-1">
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link" href="#">Coffee Capsules</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Strand Tea</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Coffee Grains</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Yerba Mate</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Accessories</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Cookies</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!--Purchase Process-->
+    <br>
+    <div class="">
+        <h3 class="processTitle">Purchase Process</h3>
+        <div  class="d-flex flex-row align-items-xl-center">
+            <div class="p-2 flex-fill justify-content-center"></div>
+            <div class="p-2 flex-fill justify-content-center text-center">
+                <img class="steps img-fluid" src="img/step-choose.png">
+                <p class="stepsText">Choose</p>
+            </div>
+            <div class="p-2 flex-fill justify-content-center text-center">
+                <img class="steps img-fluid" src="img/step-pay.png">
+                <p class="stepsText">Pay</p>
+            </div>
+            <div class="p-2 flex-fill justify-content-center text-center">
+                <img class="steps img-fluid" src="img/step-receive.png">
+                <p class="stepsText">Receive Purchase</p>
+            </div>
+        </div>
+    </div><br><br>
+
+
+    <!--Products-->
+    <div class="container h-100">
+        <h3 class="text-center pTitle">Our Capsules</h3>
+        <div class="row my-3" id="container-products"></div>
+
+
+    </div>
+
+    <!--TEMPLATES-->
+    
+    <template id="template-cart">
+        <tr>
+            <th scope="row">id</th>
+            <td>Café</td>
+            <td>1</td>
+            <td>
+                <button class="btn btn-info btn-sm">
+                    +
+                </button>
+                <button class="btn btn-danger btn-sm">
+                    -
+                </button>
+            </td>
+            <td>$ <span>500</span></td>
+        </tr>
+    </template>
+
+    <template id="template-product">
+        <div class="col mb-3 text-center">
+            <div class="card h-100" style="width: 11rem">
+                <img src="" class="card-img-top productsImg" alt="...">
+                <div class="">
+                    <h5 class="card-title">
+                        Coffee
+                    </h5>
+                    <p class="card-text ingrediets">ingrediets</p>
+                    <p class="card-text price">$ <span>5000</span></p>
+                    <button class="btn btn-primary btnFix">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="template-footer">
+        <th scope="row" colspan="2">Total products</th>
+        <td>10</td>
+        <td>
+            <button class="btn btn-danger btn-sm" id="empty-cart">
+                Empty
+            </button>
+        </td>
+        <td class="font-weight-bold">$ <span>5000</span></td>
+    </template>
+    <!--TEMPLATES END-->
+
+
+
+    <!--Footer-->
+    <footer class="d-flex flex-row align-items-xl-center stickyFooter">
+        <div class="p-2 flex-fill justify-content-center newsletter">
+            <h4>Newsletter</h4>
+            <form action="https://formsubmit.co/anemail@gmail.com" method="POST">
+                <input type="email" name="email"><br>
+                <button type="submit" class="btn btn-dark">Sign Up</button>
+            </form>
+        </div>
+        <div class="p-2 flex-fill justify-content-center">
+            <ul id="links">
+                <li><a href="#">contact us</a></li>
+                <li><a href="#">locations</a></li>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">language</a></li>
+            </ul>
+        </div>
+        <div class="p-2 flex-fill justify-content-center">
+            <ul class="socialmedia">
+                <li><a href="#" ><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            </ul><br>
+            <img class="logo" alt="logo" src="img/logo.png">
+        </div><br>
+    </footer>
+
+    <!--SCRIPTS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7f812c591f.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="main.js"></script>
+</body>
+</html>
